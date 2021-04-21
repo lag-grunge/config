@@ -19,14 +19,15 @@ set number
 " down.
 set relativenumber
 
-
-
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 
 
 " Disable audible bell because it's annoying.
 set noerrorbells visualbell t_vb=
+
+" Определяет строку статусную
+set statusline=%<%f%h%m%r%=enc=%{&fileencoding}\ %b\ 0x%B\ %l,%c%V\ %P
 
 
 "определяет ширину 1ой Tab'уляции в 4 пробела
